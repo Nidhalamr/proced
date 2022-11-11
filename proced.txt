@@ -1,6 +1,6 @@
 // PROCEDURE
 
-ALGORITHM Produit_Scal(V1, V2 : ARRAY_OF INTEGER[50], sum : INTEGER)
+ALGORITHM dot_product(V1, V2 : ARRAY_OF INTEGER[50], sum : INTEGER)
 VAR
     sum := 0
 BEGIN
@@ -19,7 +19,7 @@ END
 
 // FONCTION
 
-FUNCTION Produit_Scal(V1, V2 : ARRAY_OF INTEGER) : INTEGER
+FUNCTION dot_product(V1, V2 : ARRAY_OF INTEGER) : INTEGER
 VAR
     sum : INTEGER := 0
     i : INTEGER
@@ -45,7 +45,7 @@ sum : INTEGER
 
 BEGIN
 // remplir les 2 vecteurs
-sum := Produit_Scal (V1,V2)
+sum := dot_product (V1,V2)
 IF (sum = 0) THEN
     write ("les 2 vecteurs sont orthogonaux")
 END_IF
